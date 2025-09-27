@@ -60,46 +60,8 @@ class LinkedList:
         sorted_list = self.sorted_merge_nodes(left, right)
         return sorted_list
 
-
-    # def sorted_merge(self, other):
-    #     dummy = Node(0)
-    #     tail = dummy
-    #     a, b = self.head, other.head
-
-    #     while a and b:
-    #         if a.data <= b.data:
-    #             tail.next = aa = a. next
-    #         else:
-    #             tail.next = b
-    #             b = b.next
-    #             tail = tail.next
-
-    #         tail.next = a if a else b
-
-    #         merged =LinkedList()
-    #         merged.head = dummy.next
-    #         return merged
-
     def merge_sort(self):
         self.head = self.merge_sort_nodes(self.head)
-
-        # if not self.head or not self.head.next:
-        #     return self
-        
-        # middle = self.get_middle()
-        # next_to_middle = middle.next
-        # middle.next = None
-
-        # left = LinkedList()
-        # left.head = self.head
-
-        # right = LinkedList()
-        # right.head = next_to_middle
-
-        # left = left.merge_sort()
-        # right = right.merge_sort()
-
-        # return left.sorted_merge(right)
     
     def get_middle(self, head):
         if not head:
